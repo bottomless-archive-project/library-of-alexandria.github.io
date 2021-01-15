@@ -17,6 +17,7 @@ title: Library of Alexandria
 email: your-email@example.com
 lang: en-US
 description: Library of Alexandria (LoA in short) is a project that aims to collect and archive documents from the internet.
+git_address: https://github.com/bottomless-archive-project/library-of-alexandria
 
 # Build settings
 markdown: kramdown
