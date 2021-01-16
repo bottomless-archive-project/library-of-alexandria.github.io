@@ -5,16 +5,15 @@ title: Blog
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Latest Posts</h1>
+            <h2>Latest Posts</h2>
 
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    {{ post.excerpt }}
-                </li>
-                {% endfor %}
-            </ul>
+            {% for post in site.posts %}
+            <div class="page-header">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <span>{{ post.date }}</span>
+            </div>
+            <p>{{ post.excerpt }}</p>
+            {% endfor %}
         </div>
     </div>
 </div>
